@@ -305,7 +305,7 @@ the code base (new tests, refactoring work and various other things)!
 ## Other
 
 * Replaced old gif by a fancy new SVG screencast (@marionebl)
-* Updated [benchmark results](https://github.com/sharkdp/fd#benchmark) (fd has become faster in the meantime!). There is a new repository that hosts several benchmarking scripts for fd: https://github.com/sharkdp/fd-benchmarks
+* Updated [benchmark results](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#benchmark) (fd has become faster in the meantime!). There is a new repository that hosts several benchmarking scripts for fd: https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc-benchmarks
 
 
 # v6.2.0
@@ -335,7 +335,7 @@ the code base (new tests, refactoring work and various other things)!
 * Bash, zsh and fish completion should now work with the Ubuntu `.deb` packages, see #195 and #209
   (@tmccombs and @sharkdp)
 * There is a new section on how to set up `fzf` to use `fd` in the
-  [README](https://github.com/sharkdp/fd#using-fd-with-fzf), see #168.
+  [README](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#using-fd-with-fzf), see #168.
 
 
 # v6.1.0
@@ -390,7 +390,7 @@ Thanks also go out to @tmccombs for the work on Debian packages and for reviewin
 
 ## Features
 
-* Added new `--exec`, `-x` option for parallel command execution (@mmstick, see #84 and #116). See the corresponding [README section](https://github.com/sharkdp/fd#parallel-command-execution) for an introduction.
+* Added new `--exec`, `-x` option for parallel command execution (@mmstick, see #84 and #116). See the corresponding [README section](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#parallel-command-execution) for an introduction.
 * Auto-disable color output on unsupported Windows shells like `cmd.exe` (@iology, see #129)
 * Added the `--exclude`, `-X` option to suppress certain files/directories in the search results
   (see #89).
@@ -421,11 +421,11 @@ Thanks also go out to @tmccombs for the work on Debian packages and for reviewin
 * Added a man page (@pickfire, see #77)
 * *fd* has been relicensed under the dual license MIT/Apache-2.0 (@Detegr, see #105)
 * Major refactorings and code improvements (Big thanks to @gsquire, @reima, @iology)
-* First version of [`CONTRIBUTING`](https://github.com/sharkdp/fd/blob/master/CONTRIBUTING.md) guidelines
+* First version of [`CONTRIBUTING`](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/blob/master/CONTRIBUTING.md) guidelines
 * There is now a Nix package (@mehandes)
 * *fd* is now in the official Arch Linux repos (@cassava)
 * Improved tooling around shell completion files (@ImbaKnugel, see #124)
-* Updated tutorial in the [`README`](https://github.com/sharkdp/fd/blob/master/README.md)
+* Updated tutorial in the [`README`](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/blob/master/README.md)
 * The minimum required version of Rust has been bumped to 1.19.
 
 ## Thanks
@@ -460,7 +460,7 @@ I'd also like to take this chance to say a special Thank You to a few people tha
 # v3.0.0
 
 ## Features
-- Directories are now traversed in parallel, leading to significant performance improvements (see [benchmarks](https://github.com/sharkdp/fd#benchmark))
+- Directories are now traversed in parallel, leading to significant performance improvements (see [benchmarks](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#benchmark))
 - Added `--print0` option (@michaelmior)
 - Added AUR packages (@wezm)
 

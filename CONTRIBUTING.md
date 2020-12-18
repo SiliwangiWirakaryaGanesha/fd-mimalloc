@@ -30,8 +30,8 @@ Please replace `@user` by your GitHub username.
 
 ## Important links
 
-  * [Open issues](https://github.com/sharkdp/fd/issues)
-  * [Open pull requests](https://github.com/sharkdp/fd/pulls)
-  * [Development section in the README](https://github.com/sharkdp/fd#development)
-  * [fd on crates.io](https://crates.io/crates/fd-find)
-  * [LICENSE-APACHE](https://github.com/sharkdp/fd/blob/master/LICENSE-APACHE) and [LICENSE-MIT](https://github.com/sharkdp/fd/blob/master/LICENSE-MIT)
+  * [Open issues](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/issues)
+  * [Open pull requests](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/pulls)
+  * [Development section in the README](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#development)
+  * [fd on crates.io](https://crates.io/crates/fd-mimalloc)
+  * [LICENSE-APACHE](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/blob/master/LICENSE-APACHE) and [LICENSE-MIT](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/blob/master/LICENSE-MIT)

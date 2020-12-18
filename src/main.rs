@@ -1,3 +1,6 @@
+#[global_allocator]
+static GLOBAL: mimalloc::MiMalloc = mimalloc::MiMalloc;
+
 mod app;
 mod error;
 mod exec;
@@ -31,17 +34,6 @@ use crate::filter::OwnerFilter;
 use crate::filter::{SizeFilter, TimeFilter};
 use crate::options::Options;
 use crate::regex_helper::{pattern_has_uppercase_char, pattern_matches_strings_with_leading_dot};
-
-// We use jemalloc for performance reasons, see https://github.com/sharkdp/fd/pull/481
-// FIXME: re-enable jemalloc on macOS, see comment in Cargo.toml file for more infos
-#[cfg(all(
-    not(windows),
-    not(target_os = "android"),
-    not(target_os = "macos"),
-    not(target_env = "musl")
-))]
-#[global_allocator]
-static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 
 // vivid --color-mode 8-bit generate molokai
 const DEFAULT_LS_COLORS: &str = "

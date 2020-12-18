@@ -59,7 +59,7 @@ make_deb() {
     local maintainer
     local gcc_prefix
 
-    homepage="https://github.com/sharkdp/fd"
+    homepage="https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc"
     maintainer="David Peter <mail@david-peter.de>"
 
     case $TARGET in

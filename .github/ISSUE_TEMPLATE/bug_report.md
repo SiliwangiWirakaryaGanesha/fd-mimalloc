@@ -11,7 +11,7 @@ assignees: ''
 
 <!--
 Please check out the troubleshooting section first:
-  https://github.com/sharkdp/fd#troubleshooting
+  https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc#troubleshooting
 -->
 
 

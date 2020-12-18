@@ -4,7 +4,7 @@ build = "build.rs"
 categories = ["command-line-utilities"]
 description = "fd is a simple, fast and user-friendly alternative to find."
 exclude = ["/benchmarks/*"]
-homepage = "https://github.com/sharkdp/fd"
+homepage = "https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc"
 keywords = [
     "search",
     "find",
@@ -13,17 +13,59 @@ keywords = [
     "tool",
 ]
 license = "MIT/Apache-2.0"
-name = "fd-find"
+name = "fd-mimalloc"
 readme = "README.md"
-repository = "https://github.com/sharkdp/fd"
+repository = "https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc"
 version = "8.2.1"
 edition= "2018"
 
 [badges.appveyor]
-repository = "sharkdp/fd"
+repository = "SiliwangiWirakaryaGanesha/fd-mimalloc"
 
 [badges.travis-ci]
-repository = "sharkdp/fd"
+repository = "SiliwangiWirakaryaGanesha/fd-mimalloc"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+panic = 'unwind'
+incremental = true
+overflow-checks = true
+
+[profile.release]
+opt-level = 'z'
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'
+incremental = false
+overflow-checks = false
+
+[profile.test]
+opt-level = 0
+debug = 2
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+incremental = true
+overflow-checks = true
+
+[profile.bench]
+opt-level = 'z'
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+incremental = false
+overflow-checks = false
 
 [[bin]]
 name = "fd"
@@ -47,6 +89,8 @@ lscolors = "0.7"
 globset = "0.4"
 anyhow = "1.0"
 dirs-next = "2.0"
+mimalloc = { version = "0.1.22", default-features = false }
+openssl = { version = "0.10.31", features = ["vendored"] }
 
 [dependencies.clap]
 version = "2.31.2"
@@ -58,17 +102,7 @@ users = "0.11.0"
 [target.'cfg(all(unix, not(target_os = "redox")))'.dependencies]
 libc = "0.2"
 
-# FIXME: Re-enable jemalloc on macOS
-# jemalloc is currently disabled on macOS due to a bug in jemalloc in combination with macOS
-# Catalina. See https://github.com/sharkdp/fd/issues/498 for details.
-[target.'cfg(all(not(windows), not(target_os = "android"), not(target_os = "macos"), not(target_env = "musl")))'.dependencies]
-jemallocator = "0.3.0"
-
 [dev-dependencies]
 diff = "0.1"
 tempdir = "0.3"
 filetime = "0.2.1"
-
-[profile.release]
-lto = true
-codegen-units = 1

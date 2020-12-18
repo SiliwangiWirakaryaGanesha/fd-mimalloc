@@ -1,7 +1,7 @@
 # fd
-[![Build Status](https://travis-ci.org/sharkdp/fd.svg?branch=master)](https://travis-ci.org/sharkdp/fd)
-[![Build status](https://ci.appveyor.com/api/projects/status/21c4p5fwggc5gy3j/branch/master?svg=true)](https://ci.appveyor.com/project/sharkdp/fd/branch/master)
-[![Version info](https://img.shields.io/crates/v/fd-find.svg)](https://crates.io/crates/fd-find)
+[![Build Status](https://travis-ci.org/SiliwangiWirakaryaGanesha/fd-mimalloc.svg?branch=master)](https://travis-ci.org/SiliwangiWirakaryaGanesha/fd-mimalloc)
+[![Build status](https://ci.appveyor.com/api/projects/status/21c4p5fwggc5gy3j/branch/master?svg=true)](https://ci.appveyor.com/project/SiliwangiWirakaryaGanesha/fd-mimalloc/branch/master)
+[![Version info](https://img.shields.io/crates/v/fd-mimalloc.svg)](https://crates.io/crates/fd-mimalloc)
 [中文](https://github.com/chinanf-boy/fd-zh)
 [한국어](https://github.com/spearkkk/fd-kor)
 
@@ -83,7 +83,7 @@ Benchmark #4: fd '[0-9]\.jpg$' ~
 **Note**: This is *one particular* benchmark on *one particular* machine. While I have
 performed quite a lot of different tests (and found consistent results), things might
 be different for you! I encourage everyone to try it out on their own. See
-[this repository](https://github.com/sharkdp/fd-benchmarks) for all necessary scripts.
+[this repository](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc-benchmarks) for all necessary scripts.
 
 Concerning *fd*'s speed, the main credit goes to the `regex` and `ignore` crates that are also used
 in [ripgrep](https://github.com/BurntSushi/ripgrep) (check it out!).
@@ -426,22 +426,22 @@ For more information about `as-tree`, see [the `as-tree` README][`as-tree`].
 
 ## Installation
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/fd-find.svg)](https://repology.org/project/fd-find/versions)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/fd-mimalloc.svg)](https://repology.org/project/fd-mimalloc/versions)
 
 ### On Ubuntu
 *... and other Debian-based Linux distributions.*
 
 If you run Ubuntu 19.04 (Disco Dingo) or newer, you can install the
-[officially maintained package](https://packages.ubuntu.com/fd-find):
+[officially maintained package](https://packages.ubuntu.com/fd-mimalloc):
 ```
-sudo apt install fd-find
+sudo apt install fd-mimalloc
 ```
 Note that the binary is called `fdfind` as the binary name `fd` is already used by another package.
 It is recommended that you add an `alias fd=fdfind` to your shells initialization file, in order to
 use `fd` in the same way as in this documentation.
 
 If you use an older version of Ubuntu, you can download the latest `.deb` package from the
-[release page](https://github.com/sharkdp/fd/releases) and install it via:
+[release page](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/releases) and install it via:
 ``` bash
 sudo dpkg -i fd_8.2.1_amd64.deb  # adapt version number and architecture
 ```
@@ -449,9 +449,9 @@ sudo dpkg -i fd_8.2.1_amd64.deb  # adapt version number and architecture
 ### On Debian
 
 If you run Debian Buster or newer, you can install the
-[officially maintained Debian package](https://tracker.debian.org/pkg/rust-fd-find):
+[officially maintained Debian package](https://tracker.debian.org/pkg/rust-fd-mimalloc):
 ```
-sudo apt-get install fd-find
+sudo apt-get install fd-mimalloc
 ```
 Note that the binary is called `fdfind` as the binary name `fd` is already used by another package.
 It is recommended that you add an `alias fd=fdfind` to your shells initialization file, in order to
@@ -461,7 +461,7 @@ use `fd` in the same way as in this documentation.
 
 Starting with Fedora 28, you can install `fd` from the official package sources:
 ``` bash
-dnf install fd-find
+dnf install fd-mimalloc
 ```
 
 For older versions, you can use this [Fedora copr](https://copr.fedorainfracloud.org/coprs/keefle/fd/) to install `fd`:
@@ -519,7 +519,7 @@ sudo port install fd
 
 ### On Windows
 
-You can download pre-built binaries from the [release page](https://github.com/sharkdp/fd/releases).
+You can download pre-built binaries from the [release page](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/releases).
 
 Alternatively, you can install `fd` via [Scoop](http://scoop.sh):
 ```
@@ -540,34 +540,34 @@ nix-env -i fd
 
 ### On FreeBSD
 
-You can install [the fd-find package](https://www.freshports.org/sysutils/fd) from the official repo:
+You can install [the fd-mimalloc package](https://www.freshports.org/sysutils/fd) from the official repo:
 ```
-pkg install fd-find
+pkg install fd-mimalloc
 ```
 
 ### From NPM
 
-On linux and macOS, you can install the [fd-find](https://npm.im/fd-find) package:
+On linux and macOS, you can install the [fd-mimalloc](https://npm.im/fd-mimalloc) package:
 
 ```
-npm install -g fd-find
+npm install -g fd-mimalloc
 ```
 
 ### From source
 
 With Rust's package manager [cargo](https://github.com/rust-lang/cargo), you can install *fd* via:
 ```
-cargo install fd-find
+cargo install fd-mimalloc
 ```
 Note that rust version *1.36.0* or later is required.
 
 ### From binaries
 
-The [release page](https://github.com/sharkdp/fd/releases) includes precompiled binaries for Linux, macOS and Windows.
+The [release page](https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc/releases) includes precompiled binaries for Linux, macOS and Windows.
 
 ## Development
 ```bash
-git clone https://github.com/sharkdp/fd
+git clone https://github.com/SiliwangiWirakaryaGanesha/fd-mimalloc
 
 # Build
 cd fd
